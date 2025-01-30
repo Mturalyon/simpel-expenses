@@ -7,9 +7,19 @@ const port = 5000; // API will run on this port
 app.use(cors()); // Enable CORS
 app.use(express.json()); // To parse JSON request bodies
 
-// Sample API route
-app.get('/api', (req, res) => {
-  res.json({ message: 'Testing mc testesen' });
+let data = [];
+
+// API route to get data
+app.get('/api/data', (req, res) => {
+  res.json(data); // Send back the stored data as JSON
+});
+
+// API route to add data
+app.post('/api/data', (req, res) => {
+  const newData = req.body; // Get data from request body
+  newData.id = data.length + 1;
+  data.push(newData); // Store data (you can replace this with a real database)
+  res.status(201).json(newData); // Send back the added data
 });
 
 // Start the server
