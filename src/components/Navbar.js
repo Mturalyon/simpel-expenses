@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 /*Using Lucide icons for the menu buttons */
-import { Menu, X } from "lucide-react";
+import { Menu, X, Smile } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="container">
         
         <Link to="/" className="navbar-brand">
-        😀 Simpel
+        <Smile size={30} /> Simpel
         </Link>
 
         {/* Mobile Menu Button */}
