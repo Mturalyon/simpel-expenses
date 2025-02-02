@@ -1,7 +1,9 @@
+import ExpenseForm from "../components/ExpenseForm";
+
 function Add() {
     return(
         <>
-        Add
+        <ExpenseForm></ExpenseForm>
         </>
     )
 }

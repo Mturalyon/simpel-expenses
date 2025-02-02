@@ -17,7 +17,6 @@ app.get('/api/data', (req, res) => {
 // API route to add data
 app.post('/api/data', (req, res) => {
   const newData = req.body; // Get data from request body
-  newData.id = data.length + 1;
   data.push(newData); // Store data (you can replace this with a real database)
   res.status(201).json(newData); // Send back the added data
 });
