@@ -5,7 +5,7 @@ const ExpenseForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     price: "",
-    category: "",
+    category: "Food",
   });
 
   const handleChange = (e) => {
