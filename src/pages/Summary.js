@@ -1,7 +1,9 @@
+import PieChart from "../components/PieChart";
+
 function Summary() {
     return(
         <>
-        Summary
+        <PieChart />
         </>
     )
 }
