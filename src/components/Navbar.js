@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 /*Using Lucide icons for the menu buttons */
 import { Menu, X, Smile } from "lucide-react";
 
-export default function Navbar() {
+ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -44,3 +44,5 @@ export default function Navbar() {
     </nav>
   );
 }
+
+export default Navbar;
